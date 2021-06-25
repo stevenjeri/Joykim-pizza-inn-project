@@ -11,9 +11,27 @@
     <title>Pizza-inn</title>
 </head>
 <body>
+    <!-- home section -->
     <div class="home">
         <h1><strong>Welcome to<br>JOYKIM PIZZA INN</strong></h1>
     </div>
-    
+    <!-- End of home section -->
+    <br><br>
+    <!-- pizza ordering section -->
+    <div class="orders" id="order">
+        <h3><strong>Order pizza</strong></h3>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-8 order-overlay text-center">
+            <form class="col-sm-6 offset-sm-3 text-center">
+                <label>Choose the size of pizza</label>
+                <select class="custom-select custom-select-md-3" id="size" required>
+                    <option value="regular">Regular</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
