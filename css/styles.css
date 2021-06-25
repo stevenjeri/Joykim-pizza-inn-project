@@ -1,0 +1,14 @@
+.home {
+    background-image: url(../images/h_pizza.jpg);
+    background-size: cover;
+    padding: 300px;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:70px;
+    text-align: center;
+    color: mediumblue;
+    text-shadow: yellow;
+}
