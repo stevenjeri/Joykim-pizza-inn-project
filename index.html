@@ -22,13 +22,50 @@
         <h3><strong>Order pizza</strong></h3>
     </div>
     <div class="form-group row">
+        <div class="col-sm-2"></div>
         <div class="col-sm-8 order-overlay text-center">
             <form class="col-sm-6 offset-sm-3 text-center">
-                <label>Choose the size of pizza</label>
+                <label>Pick your pizza flavour:</label>
+                <select class="custom-select custom-select-md-3" id="flavour" required>
+                    <option value="chickenalfredo">Chicken alfredo</option>
+                    <option value="periperi">Peri-peri chicken</option>
+                    <option value="tacoquesadila">taco quesadila</option>
+                    <option value="regina">Regina</option>
+                    <option value="boerewors">Boerewors</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="vegtikka">Veg Tikka</option>
+                    <option value="bbq">BBQ Steak</option>
+                </select>
+                <label>Choose the size of pizza:</label>
                 <select class="custom-select custom-select-md-3" id="size" required>
                     <option value="regular">Regular</option>
                     <option value="medium">Medium</option>
                     <option value="large">Large</option>
+                </select>
+                <label>Choose what kind of crust:</label>
+                <select class="custom-select custom-select-md-3" id="crust" required>
+                    <option value="thin">Thin crust @ ksh. 100</option>
+                    <option value="thick">Thick crust @ ksh. 150</option>
+                    <option value="stuffed">Stuffed crust @ ksh. 200</option>
+                    <option value="deep">Deep crust @ ksh. 250</option>
+                    <option value="crispy">Cripsy crust @ ksh 300</option>
+                </select>
+                <label>Choose the toppings:</label>
+                <select class="custom-select custom-select-md-3" id="toppings" required>
+                    <option value="pineapple">Pineapple @ ksh. 100</option>
+                    <option value="sweetcorn">Sweetcorn @ ksh. 100</option>
+                    <option value="olives">Olives @ ksh. 100</option>
+                    <option value=""></option>
+                    <option value="onions">Onions @ ksh. 200</option>
+                    <option value="mushroom">Mushroom @ ksh. 200</option>
+                    <option value="tomatoes">Tomatoes @ ksh. 200</option>
+                    <option value="greenpepper">Greenpepper @ ksh 200</option>
+                    <option value=""></option>
+                    <option value="sausage">Sausage @ ksh 300</option>
+                    <option value="bacon">Bacon @ ksh 300</option>
+                    <option value="mince">Mince @ ksh 300</option>
+                    <option value="beef">Beef @ ksh 300</option>
+                    <option value="chicken">Chicken @ ksh 300</option>
                 </select>
             </form>
         </div>
