@@ -8,11 +8,11 @@
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
     font-size:70px;
     text-align: center;
     color: mediumblue;
-    text-shadow: yellow;
+    text-shadow: 4px 4px 6px black;
 }
 
 h3 {
@@ -23,10 +23,15 @@ h3 {
     text-shadow: 4px 4px 6px black;
 }
 
-.order-overlay {
+.place-order {
     background-color: cornflowerblue;
-    padding: 30px;
-    height: inherit;
+    font-size: 20px;
     border-radius: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 15%;
+    color: red;
 }
+
+
 
