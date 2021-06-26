@@ -18,3 +18,10 @@ function getQuantity() {
     var number = document.getElementById("pizzaQuantity").value;
     return parseInt(number);
 }
+
+// lets calculate the total amount
+function totalAmount() {
+    var total = (getSize() + getCrust() + getTopping()) * getQuantity();
+    console.log(total);
+    alert("You have placed your order" + getQuantity() +"pizza," + "" + "Thanks for your order welcome again.");
+}

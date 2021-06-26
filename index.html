@@ -27,52 +27,52 @@
                 <br>
                 <div class="form-group">
                     <div id="size">
-                        <label class="form-label" for="size">Choose the size of pizza:</label><br>
-                        <select class="form-control" name="size" id="size" required>
+                        <label class="form-label" for="pizzaSize">Choose the size of pizza:</label><br>
+                        <select class="form-control" name="size" id="pizzaSize" required>
                             <option value="">----select----</option>
-                            <option value="regular">Regular</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
+                            <option value="800">Regular -- ksh. 800</option>
+                            <option value="1000">Medium -- ksh. 1000</option>
+                            <option value="1200">Large -- ksh. 1200</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
                     <div id="crust">
-                        <label class="form-label" for="crust">Choose what kind of crust:</label><br>
-                        <select class="form-control" name="crust" id="crust" required>
+                        <label class="form-label" for="pizzaCrust">Choose what kind of crust:</label><br>
+                        <select class="form-control" name="crust" id="pizzaCrust" required>
                             <option value="">----select----</option>
-                            <option value="thin">Thin crust @ ksh. 200</option>
-                            <option value="thick">Thick crust @ ksh. 200</option>
-                            <option value="stuffed">Stuffed crust @ ksh. 200</option>
-                            <option value="deep">Deep crust @ ksh. 200</option>
-                            <option value="crispy">Cripsy crust @ ksh 200</option>
+                            <option value="200">Thin crust -- ksh. 200</option>
+                            <option value="200">Thick crust -- ksh. 200</option>
+                            <option value="200">Stuffed crust -- ksh. 200</option>
+                            <option value="200">Deep crust -- ksh. 200</option>
+                            <option value="200">Cripsy crust -- ksh 200</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
                     <div id="toppings">
-                        <label class="form-label" for="toppings">Choose toppings:</label><br>
-                        <select class="form-control" name="toppings" id="toppings" required>
+                        <label class="form-label" for="pizzaTopping">Choose toppings:</label><br>
+                        <select class="form-control" name="toppings" id="pizzaTopping" required>
                             <option value="">----select----</option>
-                            <option value="tomato">Tomato @ sh. 100</option>
-                            <option value="onions">Onions @ sh. 100</option>
-                            <option value="mushroom">Mushroom @ sh. 100</option>
-                            <option value="greenpepper">Green Pepper @ sh. 100</option>
-                            <option value="olives">Olives @ sh. 100</option>
-                            <option value="pineapple">Pineapple @ sh. 100</option>
-                            <option value="beef">Beef Peperoni @ sh. 100</option>
-                            <option value="chicken">Periperi Chicken @ sh. 100</option>
+                            <option value="100">Tomato -- ksh. 100</option>
+                            <option value="100">Onions -- ksh. 100</option>
+                            <option value="100">Mushroom -- ksh. 100</option>
+                            <option value="100">Green Pepper -- ksh. 100</option>
+                            <option value="100">Olives -- ksh. 100</option>
+                            <option value="100">Pineapple -- ksh. 100</option>
+                            <option value="100">Beef Peperoni -- ksh. 100</option>
+                            <option value="100">Periperi Chicken -- ksh. 100</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
                     <div id="number">
                         <label for="quantity">Quantity</label>
-                        <input class="form-control" type="number" name="pizza" id="quantity" placeholder="0" max="" min="0">
+                        <input class="form-control" type="number" name="pizza" id="pizzaQuantity" placeholder="0" max="" min="0">
                     </div>
                 </div>
                 <br>
-                <button type="submit" class="btn btn-primary btn-lg">Confirm order</button>
+                <button type="submit" class="btn btn-primary btn-lg" onclick="totalAmount();">Confirm order</button>
             </form>
         </div>
     </div>
