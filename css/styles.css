@@ -9,16 +9,17 @@ body {
 .home {
     background-image: url(../images/h_pizza.jpg);
     background-size: cover;
-    padding: 200px;
+    padding: 150px;
     background-repeat: no-repeat;
 }
 
+
 h1 {
     font-family: monospace;
-    font-size:40px;
+    font-size:60px;
     text-align: center;
     color: mediumblue;
-    text-shadow: 4px 4px 6px black;
+    text-shadow: 5px 5px 8px black;
 }
 
 .menu {
@@ -45,14 +46,14 @@ h3 {
 }
 
 .place-order {
-    background-color: cornflowerblue;
+    background-color: darkgrey;
     font-size: 11px;
     border-radius: 25px;
     margin-left: 5%;
     margin-right: 5%;
     padding-left: 5%;
     margin-bottom: 5%;
-    color: red;
+    color: black;
 }
 
 h4 {
@@ -64,7 +65,7 @@ h4 {
 }
 
 .delivery-section {
-    background-color: darkgrey;
+    background-color:paleturquoise;
     font-size: 11px;
     border-radius: 25px;
     margin-left: 25%;
@@ -73,7 +74,7 @@ h4 {
     padding-top: 1%;
     padding-bottom: 5%;
     margin-bottom: 10%;
-    color: red;
+    color: black;
 }
 
 h6 {
@@ -83,6 +84,10 @@ h6 {
     color: orange;
     text-shadow: 4px 4px 6px black;
     
+}
+
+input[type=text] {
+    background-color: transparent;
 }
 
 
