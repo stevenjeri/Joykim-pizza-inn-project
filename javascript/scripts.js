@@ -24,11 +24,14 @@ function totalAmount() {
     var total = (getSize() + getCrust() + getTopping()) * getQuantity();
     alert("You have ordered " + getQuantity() + " pizza," + "" + " amounting to ksh. " +
     total + " ");
-    prompt("Enter your email address")
-    prompt("Enter your phone number")
-    prompt("Enter your location")
-    alert("Your delivery fee is ksh.250")
-    alert("Your order will be processed and delivered within one hour of placing")
-    alert("Continue shopping with us each and everytime")
 }
 
+$(document).ready(function() {
+    $("#delivery").submit(function(){
+        var name = $("input#name").val();
+        var number = $("input#number").val();
+        var location = $("input#location").val();
+
+        alert("Hello " +  name + ". Your order has been successfully received. It will be processed and delivered to " + location + " within one hour of placing.  Your delivery fee is ksh.250 .   Thank you for chosing our pizza inn.");
+    });
+});
