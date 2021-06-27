@@ -22,6 +22,13 @@ function getQuantity() {
 // lets calculate the total amount
 function totalAmount() {
     var total = (getSize() + getCrust() + getTopping()) * getQuantity();
-    alert("You have placed your order" + getQuantity() +"pizza," + "" + " amounting to ksh. " +
-    total + " " + "Thanks for your order welcome again.");
+    alert("You have ordered " + getQuantity() + " pizza," + "" + " amounting to ksh. " +
+    total + " ");
+    prompt("Enter your email address")
+    prompt("Enter your phone number")
+    prompt("Enter your location")
+    alert("Your delivery fee is ksh.250")
+    alert("Your order will be processed and delivered within one hour of placing")
+    alert("Continue shopping with us each and everytime")
 }
+

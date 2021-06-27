@@ -18,7 +18,7 @@
     <br><br>
     <!-- pizza ordering section -->
     <div class="place-order">
-        <h3><strong>Order pizza</strong></h3>
+        <h2><strong>Order pizza</strong></h2>
         <div class="row">
             <div class="col-sm-5">
                 <form action="">
@@ -84,18 +84,36 @@
                         </div>
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-primary btn-lg" onclick="totalAmount();">Place order</button>
+                    <button type="submit" class="btn btn-primary btn-lg" onclick="totalAmount();">Checkout</button>
                 </form>
                 <br>
             </div>
             <!-- displays the orders’ summary together -->
-            <div class="col-sm-5">
+            <div class="col-sm-6">
                 <div class="order-summary" id="sum-order">
-                    <h4><strong>Order summary</strong></h4>
+                    <h3><strong>Order summary</strong></h3>
                     <h5 class="text-center" id="summary">Your Order is:</h5>
                     <ol id="list" class="text-center">
                     </ol>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="delivery-section">
+        <!-- display delivery form  -->
+        <div class="col-md-6">
+            <div class="formLocation">
+                <h4><strong>Delivery services</strong></h4>
+                <form id="delivery">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name=""  id="name" placeholder="name.."  required>
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control" name=""  id="location" placeholder="location..." required>
+                    <label for="phoneNumber">Phone number</label>
+                    <input type="text" class="form-control" name=""  id="phoneNumber" placeholder="+254...."  required>
+                    <br>
+                    <button type="submit" class="btn btn-danger btn-lg" id="submit" >Submit</button>
+                </form>
             </div>
         </div>
     </div>
