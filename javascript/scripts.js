@@ -19,6 +19,7 @@ function getQuantity() {
     return parseInt(number);
 }
 
+
 // lets calculate the total amount
 function totalAmount() {
     var total = (getSize() + getCrust() + getTopping()) * getQuantity();
@@ -26,6 +27,16 @@ function totalAmount() {
     total + " ");
 }
 
+// $(document).ready(function() {
+//     $("#checkout").submit(function() {
+//         let pizzaFlavour = $(".pizzaFlavour option:selected");
+//         let pizzaSize = $(".pizzaSize option:selected");
+//         let pizzaCrust = $(".pizzaCrust option:selected");
+//         let pizzaTopping = $(".pizzaTopping option:selected");
+//     })
+// })
+
+// delivery form inputs
 $(document).ready(function() {
     $("#delivery").submit(function(){
         var name = $("input#name").val();
