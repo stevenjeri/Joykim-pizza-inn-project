@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600&display=swap');
-/* 
+
 body {
-    background-image: url(../images/a_pizza1.jpeg);
+    background-image: url(../images/b.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-} */
+}
 
 .home {
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/h_pizza.jpg);
     background-size: cover;
     padding: 200px;
     background-repeat: no-repeat;
@@ -21,6 +21,12 @@ h1 {
     text-shadow: 4px 4px 6px black;
 }
 
+.menu {
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+}
+
 h2 {
     font-family: monospace;
     font-size: 50px;
@@ -28,6 +34,7 @@ h2 {
     color: orange;
     text-shadow: 4px 4px 6px black;
 }
+
 
 h3 {
     font-family: monospace;
@@ -52,7 +59,7 @@ h4 {
     font-family: monospace;
     font-size: 20px;
     text-align: center;
-    color: orange;
+    color: blue;
     text-shadow: 4px 4px 6px black;
 }
 
@@ -67,6 +74,15 @@ h4 {
     padding-bottom: 5%;
     margin-bottom: 10%;
     color: red;
+}
+
+h6 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+    color: orange;
+    text-shadow: 4px 4px 6px black;
+    
 }
 
 
