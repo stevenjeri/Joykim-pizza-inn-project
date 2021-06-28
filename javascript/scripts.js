@@ -37,10 +37,21 @@ $(document).ready(function() {
         } else if (this.pizzaTopping === "mushroom") {
             this.pizzaPrice += 80;
         } else if (this.pizzaTopping === "chicken") {
-
+            this.pizzaPrice += 80;
         }
+    };
+
+    Order.prototype.finalCost = function() {
+        var cartTotalPrice = [];
+        for (var arrayElement = 0; arrayElement < totalPriceArray.length; arrayElement++) {
+            cartTotalPrice += totalPriceArray[arrayElement];
+        }
+        return cartTotalPrice;
     }
 });
+
+
+
 
 
 
