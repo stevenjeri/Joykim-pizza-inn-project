@@ -6,13 +6,11 @@ body {
     background-repeat: no-repeat;
 }
 
-.home {
-    background-image: url(../images/h_pizza.jpg);
-    background-size: cover;
-    padding: 150px;
-    background-repeat: no-repeat;
+.header {
+    padding: 1em 0;
+    background-color: cadetblue;
+    color: #fff;
 }
-
 
 h1 {
     font-family: monospace;
@@ -40,20 +38,9 @@ h2 {
 h3 {
     font-family: monospace;
     font-size: 40px;
-    text-align: right;
+    text-align: left;
     color: orange;
     text-shadow: 4px 4px 6px black;
-}
-
-.place-order {
-    background-color: darkgrey;
-    font-size: 11px;
-    border-radius: 25px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-left: 5%;
-    margin-bottom: 5%;
-    color: black;
 }
 
 h4 {
@@ -64,30 +51,86 @@ h4 {
     text-shadow: 4px 4px 6px black;
 }
 
-.delivery-section {
-    background-color:paleturquoise;
-    font-size: 11px;
-    border-radius: 25px;
-    margin-left: 25%;
-    margin-right: 30%;
-    padding-left: 5%;
-    padding-top: 1%;
-    padding-bottom: 5%;
-    margin-bottom: 10%;
-    color: black;
+h5 {
+    font-family: monospace;
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    text-shadow: 4px 4px 6px black;
 }
 
 h6 {
     text-align: center;
     font-family: monospace;
-    font-size: 40px;
-    color: orange;
+    font-size: 30px;
+    color: black;
     text-shadow: 4px 4px 6px black;
     
 }
 
+.place-order {
+    background-color: darkgrey;
+    font-size: 11px;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 2%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: black;
+}
+
+.checkout-section {
+    padding: 0.75em 0;
+    border-top: 1px solid;
+}
+
+#pizza-details {
+    color: black;
+}
+
+.delivery-section {
+    font-size: 11px;
+    border-radius: 25px;
+    margin-left: 45%;
+    margin-right: 35%;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-right: 30%;
+    color: black;
+
+
+}
+
+#price-details  {
+    text-align: left;
+    padding: 0;
+    padding-left: 5%;
+}
+
+#order-details {
+    text-align: left;
+    font-size: 20px;
+    border: 2px solid black;
+    padding-top: 10px;
+    border-style: dashed;
+    color: #FDB913
+}
+
+.cart-section {
+    background-color: cyan;
+}
+
 input[type=text] {
     background-color: transparent;
+}
+
+.footer {
+    background-color: darkcyan;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    padding-top: 5%;
 }
 
 

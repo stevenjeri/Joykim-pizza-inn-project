@@ -1,9 +1,12 @@
 // Business logic
 $(document).ready(function() {
     $("#order-details").hide();
+    $(".delivery-section").hide();
+    $("#delivery").hide();
 
     var totalPriceArray = [];
-    function Order(pizzaSize, pizzaCrust, pizzaTopping, amount) {
+    function Order(pizzaFlavour,pizzaSize, pizzaCrust, pizzaTopping, amount) {
+        this.pizzaFlavour = pizzaFlavour;
         this.pizzaSize = pizzaSize;
         this.pizzaCrust = pizzaCrust;
         this.pizzaTopping = pizzaTopping;
@@ -49,16 +52,17 @@ $(document).ready(function() {
         return cartTotalPrice;
     };
 
-    $(".btn.check-out").click(function() {
+    $(".btn.check-out").click(function(event) {
         event.preventDefault();
     });
     $("form#custom-pizza").submit(function(event) {
         event.preventDefault();
+        var pizzaFlavour = $("select#pizzaFlavour").val();
         var pizzaSize = $("select#pizzaSize").val();
         var pizzaCrust = $("select#pizzaCrust").val();
         var pizzaTopping = $("select#pizzaTopping").val();
-        var pizzaDetails = (pizzaSize + " - " + pizzaCrust + " - " + pizzaTopping);
-        var newPizzaOrder = new Order(pizzaSize, pizzaCrust, pizzaTopping);
+        var pizzaDetails = (pizzaFlavour + " - " + pizzaSize + " - " + pizzaCrust + " - " + pizzaTopping);
+        var newPizzaOrder = new Order(pizzaFlavour,pizzaSize, pizzaCrust, pizzaTopping);
         newPizzaOrder.pizzaCost();
         totalPriceArray.push(newPizzaOrder.pizzaPrice);
         $("#final-cost").text(newPizzaOrder.finalCost());
@@ -66,7 +70,18 @@ $(document).ready(function() {
     });
 
     $("#checkout-btn").click(function() {
-        $("#order-details").toggle();
+        $("#checkout-btn").hide();
+        $("#order-details").slideDown(1000);
+        $("#delivery").slideDown(1000);
+ 
+    });
+    $("#delivery").click(function(){
+        $("#order-details").hide();
+        $(".cart-section").hide();
+        $("#delivery").hide();
+        $(".delivery-section").slideDown();
+        
+
     });
 
     $("#delivery").submit(function() {
@@ -77,50 +92,3 @@ $(document).ready(function() {
         alert("Hello " +  name + ". Your order has been successfully received. It will be processed and delivered to " + location + " within one hour of placing.  Your delivery fee is ksh.250 .   Thank you for chosing our pizza inn.");
     });
 });
-
-
-
-
-
-
-
-
-
-// function getSize() {
-//     var size = document.getElementById("pizzaSize").value;
-//     return parseInt(size);
-// }
-
-// function getCrust() {
-//     var crust = document.getElementById("pizzaCrust").value;
-//     return parseInt(crust);
-// }
-
-// function getTopping() {
-//     var topping = document.getElementById("pizzaTopping").value;
-//     return parseInt(topping);
-// }
-
-// function getQuantity() {
-//     var number = document.getElementById("pizzaQuantity").value;
-//     return parseInt(number);
-// }
-
-
-// // lets calculate the total amount
-// function totalAmount() {
-//     var total = (getSize() + getCrust() + getTopping()) * getQuantity();
-//     alert("You have ordered " + getQuantity() + " pizza," + "" + " amounting to ksh. " +
-//     total + " ");
-// }
-
-// // delivery form inputs
-// $(document).ready(function() {
-//     $("#delivery").submit(function(){
-//         var name = $("input#name").val();
-//         var number = $("input#number").val();
-//         var location = $("input#location").val();
-
-//         alert("Hello " +  name + ". Your order has been successfully received. It will be processed and delivered to " + location + " within one hour of placing.  Your delivery fee is ksh.250 .   Thank you for chosing our pizza inn.");
-//     });
-// });
