@@ -47,7 +47,35 @@ $(document).ready(function() {
             cartTotalPrice += totalPriceArray[arrayElement];
         }
         return cartTotalPrice;
-    }
+    };
+
+    $(".btn.check-out").click(function() {
+        event.preventDefault();
+    });
+    $("form#custom-pizza").submit(function(event) {
+        event.preventDefault();
+        var pizzaSize = $("select#pizzaSize").val();
+        var pizzaCrust = $("select#pizzaCrust").val();
+        var pizzaTopping = $("select#pizzaTopping").val();
+        var pizzaDetails = (pizzaSize + " - " + pizzaCrust + " - " + pizzaTopping);
+        var newPizzaOrder = new Order(pizzaSize, pizzaCrust, pizzaTopping);
+        newPizzaOrder.pizzaCost();
+        totalPriceArray.push(newPizzaOrder.pizzaPrice);
+        $("#final-cost").text(newPizzaOrder.finalCost());
+        $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
+    });
+
+    $("#checkout-btn").click(function() {
+        $("#order-details").toggle();
+    });
+
+    $("#delivery").submit(function() {
+        var name = $("input#name").val();
+        var phoneNumber = $("input#phoneNumber").val();
+        var location = $("input#location").val();
+
+        alert("Hello " +  name + ". Your order has been successfully received. It will be processed and delivered to " + location + " within one hour of placing.  Your delivery fee is ksh.250 .   Thank you for chosing our pizza inn.");
+    });
 });
 
 
