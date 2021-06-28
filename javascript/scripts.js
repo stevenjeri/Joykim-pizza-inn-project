@@ -14,10 +14,30 @@ $(document).ready(function() {
     Order.prototype.pizzaCost = function() {
         if (this.pizzaSize === "regular") {
             this.pizzaPrice += 800;
-        } else if (this.size === "medium") {
+        } else if (this.pizzaSize === "medium") {
             this.pizzaPrice += 1000;
-        } else if (this.size === "large") {
+        } else if (this.pizzaSize === "large") {
             this.pizzaPrice += 1000;
+        }
+
+        if (this.pizzaCrust === "thin") {
+            this.pizzaPrice += 200;
+        } else if (this.pizzaCrust === "thick") {
+            this.pizzaPrice += 200;
+        } else if (this.pizzaCrust === "stuffed") {
+            this.pizzaPrice += 200;
+        } else if (this.pizzaCrust === "crispy") {
+            this.pizzaPrice += 200;
+        }
+
+        if (this.pizzaTopping === "tomato") {
+            this.pizzaPrice += 80;
+        } else if (this.pizzaTopping === "sausage") {
+            this.pizzaPrice += 80;
+        } else if (this.pizzaTopping === "mushroom") {
+            this.pizzaPrice += 80;
+        } else if (this.pizzaTopping === "chicken") {
+
         }
     }
 });
