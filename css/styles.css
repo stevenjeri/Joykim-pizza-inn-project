@@ -90,22 +90,30 @@ h6 {
 }
 
 .delivery-section {
+    background-color: rgba(136, 170, 233, 0.555);
     font-size: 11px;
     border-radius: 25px;
-    margin-left: 45%;
-    margin-right: 35%;
+    margin-left: 20%;
+    margin-right: 10%;
     padding-left: 5%;
     padding-top: 1%;
-    padding-right: 30%;
     color: black;
+}
 
-
+.pick-up {
+    text-align: center;
+    color: white;
+    background-color: steelblue;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 3%;
+    display: none;
 }
 
 #price-details  {
     text-align: left;
     padding: 0;
-    padding-left: 5%;
+    padding-left: 1%;
 }
 
 #order-details {

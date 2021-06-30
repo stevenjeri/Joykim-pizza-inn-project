@@ -2,7 +2,7 @@
 $(document).ready(function() {
     $("#order-details").hide();
     $(".delivery-section").hide();
-    $("#delivery").hide();
+    $("#home-delivery").hide();
 
     var totalPriceArray = [];
     function Order(pizzaFlavour,pizzaSize, pizzaCrust, pizzaTopping, amount) {
@@ -72,19 +72,24 @@ $(document).ready(function() {
     $("#checkout-btn").click(function() {
         $("#checkout-btn").hide();
         $("#order-details").slideDown(1000);
-        $("#delivery").slideDown(1000);
+        $("#home-delivery").show();
  
     });
+
     $("#delivery").click(function(){
-        $("#order-details").hide();
-        $(".cart-section").hide();
         $("#delivery").hide();
-        $(".delivery-section").slideDown();
-        
+        $("#pick-up").hide();
+        $(".delivery-section").show();
+    });
+
+    $("#pick-up").click(function(){
+        $("#delivery").hide();
+        $("#pick-up").hide();
+        $(".pick-up").slideDown(1000);
 
     });
 
-    $("#delivery").submit(function() {
+    $(".delivery-section").submit(function() {
         var name = $("input#name").val();
         var phoneNumber = $("input#phoneNumber").val();
         var location = $("input#location").val();
